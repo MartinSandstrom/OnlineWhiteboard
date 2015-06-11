@@ -14,6 +14,10 @@ $(function(){
         whiteboard.child('context').set(canvas.toDataURL(), onComplete);
     };
 
+    $('#wipe').click(function(){
+        whiteboard.child('context').set({}, onComplete);
+    });
+
     var onComplete = function(error){
         if(error)
           console.log(error)
@@ -28,6 +32,7 @@ $(function(){
     canvas.height = parseInt(sketch_style.getPropertyValue('height'));
 
     whiteboard.on('value', function(snapshot){
+        if(!snapshot.val()) return ctx.clearRect(0, 0, canvas.width, canvas.height);
         var img = new Image;
         img.onload = function(){
             ctx.drawImage(img,0,0);
