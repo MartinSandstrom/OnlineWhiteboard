@@ -37,7 +37,7 @@ $(function(){
     });
 
 
-    var is_touch_device = 'ontouchstart' in document.documentElement;
+    var is_touch_device = ('ontouchstart' in document.documentElement) || ('createTouch' in document) || ('ontouchstart' in window);
 
      if (is_touch_device) {
         // create a drawer which tracks touch movements
