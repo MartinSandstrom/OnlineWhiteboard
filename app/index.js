@@ -26,7 +26,11 @@ $(function(){
     ctx.lineWidth = 5;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
-    ctx.strokeStyle = 'red';
+    ctx.strokeStyle = $('#color').val();
+
+    $('#color').change(function(){
+        ctx.strokeStyle = $('#color').val();
+    });
 
     canvas.width = parseInt(sketch_style.getPropertyValue('width'));
     canvas.height = parseInt(sketch_style.getPropertyValue('height'));
