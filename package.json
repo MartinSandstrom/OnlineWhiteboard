@@ -1,0 +1,23 @@
+{
+  "name": "OnlineWhiteboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MartinSandstrom/OnlineWhiteboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinSandstrom/OnlineWhiteboard/issues"
+  },
+  "homepage": "https://github.com/MartinSandstrom/OnlineWhiteboard",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.2"
+  }
+}
