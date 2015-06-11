@@ -36,7 +36,6 @@ $(function(){
         img.src = data.context;
     });
 
-    /* Mouse Capturing Work */
     canvas.addEventListener('mousemove', function(e) {
         mouse.x = e.pageX - this.offsetLeft;
         mouse.y = e.pageY - this.offsetTop;
