@@ -1,0 +1,20 @@
+{
+  "name": "OnlineWhiteboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MartinSandstrom/OnlineWhiteboard",
+  "authors": [
+    "Martin Sandström <maartiin_91@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.2.7",
+    "jquery": "~2.1.4"
+  }
+}
