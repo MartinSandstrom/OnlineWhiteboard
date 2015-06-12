@@ -6,8 +6,11 @@ $(function(){
     var sketch = document.querySelector('#sketch');
     var sketch_style = getComputedStyle(sketch);
     var mouse = {x: 0, y: 0};
+    var size = 5;
+
 
     var onPaint = function() {
+        ctx.lineWidth = size;
         ctx.lineTo(mouse.x, mouse.y);
         ctx.stroke();
 
@@ -23,13 +26,16 @@ $(function(){
           console.log(error)
     };
 
-    ctx.lineWidth = 5;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
     ctx.strokeStyle = $('#color').val();
 
     $('#color').change(function(){
         ctx.strokeStyle = $('#color').val();
+    });
+
+    $('#size').change(function(){
+        size = $('#size').val();  
     });
 
     canvas.width = parseInt(sketch_style.getPropertyValue('width'));
