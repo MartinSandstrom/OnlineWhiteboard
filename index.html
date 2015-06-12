@@ -8,16 +8,20 @@
     <body>
         <div class="editor">
             <input type="button" value="Wipe me, lol." id="wipe">
-        </div>
-        <div>
             <input type="color" value="Pick a color" id="color">
+            <select id="size">
+                <option value="5">small</option>
+                <option value="10">medium</option>
+                <option value="15">large</option>
+                <option value="30">war</option>
+          </select>
         </div>
         <div id="sketch"style="height: 100vh">
           <canvas id="paint"></canvas>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/firebase/firebase.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
