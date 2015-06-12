@@ -5,6 +5,7 @@ npm-debug.log
 node_modules/
 public/lib
 app/tests/coverage/
+app/bower_components
 .bower-*/
 .idea/
 .publish/
